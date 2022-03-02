@@ -1,0 +1,44 @@
+{
+    "users": [
+        {
+            "name": "Ajeet",
+            "id": 1001,
+            "email": "ajeet@gmail.com"
+        },
+        {
+            "name": "shilpa",
+            "id": 1002,
+            "email": "shilpa@gmail.com"
+        },
+        {
+            "name": "anand",
+            "id": 1003,
+            "email": "anand@gmail.com"
+        },
+        {
+            "name": "deep",
+            "id": 1004,
+            "email": "deep@gmail.com"
+        },
+        {
+            "name": "sidda",
+            "id": 1005,
+            "email": "sidda@gmail.com"
+        }
+    ],
+    "department": [
+        {
+            "name": "Software",
+            "id": 1
+        },
+        {
+            "name": "Medecine",
+            "id": 2
+        },
+        {
+            "name": "",
+            "id": 3
+        }
+    ]
+}
+
