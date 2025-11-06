@@ -9,7 +9,7 @@ app.use(bodyParser.json());  //This is to show that we are using JSON Data in th
 
 app.use('/', userRouter);
 
-app.get('/',(req, res) => res.send('Hello !'))
+// app.get('/',(req, res) => res.send('Hello !'))
 
 app.listen(PORT, console.log(`server is running on http://localhost:${PORT}`));
 

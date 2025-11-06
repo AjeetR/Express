@@ -1,5 +1,5 @@
 const express = require('express');
-const users = require('./user');        //JSON data file from  /route/user.json
+const users = require('./user.json');        //JSON data file from  /route/user.json
 const userModel = require('../models/userModel')
 const request = require('request');
 const axios = require('axios');
@@ -10,17 +10,13 @@ const fs = require('fs');
 const router = express.Router();
 const userData = JSON.parse(JSON.stringify(users));
 
-router.get('/', (req, res) => {
+router.get('/users', (req, res) => {
     // console.log(userData.users);
     res.send(userData.users);
 });
 
-router.get('/department', (req, res) => {
-    // console.log(userData.department);
-    // res.send(userData.department);
-
+router.get('/coffee', async (req, res) => {
     function ordeCoffee() {
-
         return new Promise((resolve, reject) => {
             request('https://api.sampleapis.com/coffee/hot', (err, res) => {
                 if (err) {
@@ -40,7 +36,7 @@ router.get('/department', (req, res) => {
         res.send(order1)
     }
 
-    asyncCall();
+    await asyncCall();
 
 });
 
