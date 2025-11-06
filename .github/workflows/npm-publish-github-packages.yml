@@ -25,4 +25,4 @@ jobs:
             cd /path/to/Express
             git pull origin main
             npm install
-            pm2 restart express-app
+            pm2 restart express-app || pm2 start index.js --name express-app
